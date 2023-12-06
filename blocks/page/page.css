@@ -1,7 +1,10 @@
 .page {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   margin: 0 auto;
-  padding: 45px 200px 60px;
+  padding: 45px 0 60px;
+  align-items: center;
 }
