@@ -1,5 +1,7 @@
 .profile__info {
+  margin: 0;
   display: flex;
+  flex-direction: column;
   align-content: center;
-  background-color: plum;
+  color: #fff;
 }
