@@ -1,14 +1,14 @@
 @import url("../vendor/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap");
-/* PAGE ---------------------------------------------------------------------------------------- */
+/* PAGE -------------------------------------------------------------------------------------- */
 @import url("../blocks/page/page.css");
-/* HEADER -------------------------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------------------------ */
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__line/header__line.css");
 /* CONTENT ----------------------------------------------------------------------------------- */
 @import url("../blocks/content/content.css");
-/* PROFILE ------------------------------------------------------------------------------------- */
+/* PROFILE ----------------------------------------------------------------------------------- */
 @import url("../blocks/profile/profile.css");
 @import url("../blocks/profile/__container/profile__container.css");
 @import url("../blocks/profile/__avatar/profile__avatar.css");
@@ -17,3 +17,12 @@
 @import url("../blocks/profile/__editButton/profile__editButton.css");
 @import url("../blocks/profile/__occupation/profile__ocuppation.css");
 @import url("../blocks/profile/__addButton/profile__addButton.css");
+/* PLACES ------------------------------------------------------------------------------------ */
+@import url("../blocks/places/places.css");
+@import url("../blocks/places/__item/places__item.css");
+@import url("../blocks/places/__pictureContainer/places__pictureContainer.css");
+@import url("../blocks/places/__picture/places__picture.css");
+@import url("../blocks/places/__container/places__container.css");
+@import url("../blocks/places/__nameContainer/places__nameContainer.css");
+@import url("../blocks/places/__name/places__name.css");
+@import url("../blocks/places/__likeButton/places__likeButton.css");
