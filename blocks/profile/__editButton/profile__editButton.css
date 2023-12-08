@@ -1,3 +1,8 @@
 .profile__editButton {
   margin-left: 10px;
 }
+
+.profile__editButton:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
