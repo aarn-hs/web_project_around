@@ -8,179 +8,180 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
-        <img
-          src="./images/headerLogo.svg"
-          alt="Around The U.S."
-          class="header__logo"
-        />
-        <div class="header__line"></div>
-      </header>
-      <main class="content">
-        <section class="profile">
-          <div class="profile__container">
-            <img
-              src="./images/jaques.jpg"
-              alt="Profile picture"
-              class="profile__avatar"
-            />
-            <div class="profile__info">
-              <h2 class="profile__name">
-                Jaques Custeau
-                <img
-                  src="./images/editButton.svg"
-                  alt="Edit button"
-                  class="profile__editButton"
-                />
-              </h2>
-              <h3 class="profile__occupation">Explorer</h3>
-            </div>
+      <section class="popup">
+        <div class="popup__container">
+          <h2 class="popup__title">Editar perfil</h2>
+          <div class="popup__nameContainer">
+            <h3 class="popup__name">Nombre</h3>
+            <div class="popup__line"></div>
           </div>
+          <div class="popup__aboutMeContainer">
+            <h3 class="popup__aboutMe">Acerca de mi</h3>
+            <div class="popup__line"></div>
+          </div>
+          <div class="popup__saveButton">
+            <h3 class="popup__saveButtonText">Guardar</h3>
+          </div>
+        </div>
+      </section>
+      <div class="overlay popup__overlay">
+        <header class="header">
           <img
-            src="./images/addButton.svg"
-            alt="Add button"
-            class="profile__addButton"
+            src="./images/headerLogo.svg"
+            alt="Around The U.S."
+            class="header__logo"
           />
-        </section>
-        <section class="popup">
-          <div class="popup__container">
-            <h2 class="popup__title">Editar Perfil</h2>
-            <div class="popup__nameContainer">
-              <h3 class="popup__name">Nombre</h3>
-              <div class="popup__line"></div>
-            </div>
-            <div class="popup__aboutMeContainer">
-              <h3 class="popup__aboutMe">Acerca de mi</h3>
-              <div class="popup__line"></div>
-            </div>
-            <div class="popup__saveButton">
-              <h3 class="popup__saveButtonText">Guardar</h3>
-            </div>
-            <div class="popup__background"></div>
-          </div>
-        </section>
-        <section class="places">
-          <figure class="places__item">
-            <div class="places__container">
-              <div class="places__pictureContainer">
-                <img
-                  src="./images/yosemiteValley.jpg"
-                  alt="Yosemite Valley"
-                  class="places__picture"
-                />
-              </div>
-              <div class="places__nameContainer">
-                <h2 class="places__name">Yosemite Valley</h2>
-                <img
-                  src="./images/likeButton.svg"
-                  alt="Like Button"
-                  class="places__likeButton"
-                />
+          <div class="header__line"></div>
+        </header>
+        <main class="content">
+          <section class="profile">
+            <div class="profile__container">
+              <img
+                src="./images/jaques.jpg"
+                alt="Profile picture"
+                class="profile__avatar"
+              />
+              <div class="profile__info">
+                <h2 class="profile__name">
+                  Jaques Custeau
+                  <img
+                    src="./images/editButton.svg"
+                    alt="Edit button"
+                    class="profile__editButton"
+                  />
+                </h2>
+                <h3 class="profile__occupation">Explorer</h3>
               </div>
             </div>
-          </figure>
-          <figure class="places__item">
-            <div class="places__container">
-              <div class="places__pictureContainer">
-                <img
-                  src="./images/lakeLouise.jpg"
-                  alt="Lake Louise"
-                  class="places__picture"
-                />
+            <img
+              src="./images/addButton.svg"
+              alt="Add button"
+              class="profile__addButton"
+            />
+          </section>
+          <section class="places">
+            <figure class="places__item">
+              <div class="places__container">
+                <div class="places__pictureContainer">
+                  <img
+                    src="./images/yosemiteValley.jpg"
+                    alt="Yosemite Valley"
+                    class="places__picture"
+                  />
+                </div>
+                <div class="places__nameContainer">
+                  <h2 class="places__name">Yosemite Valley</h2>
+                  <img
+                    src="./images/likeButton.svg"
+                    alt="Like Button"
+                    class="places__likeButton"
+                  />
+                </div>
               </div>
-              <div class="places__nameContainer">
-                <h2 class="places__name">Lake Louise</h2>
-                <img
-                  src="./images/likeButton.svg"
-                  alt="Like Button"
-                  class="places__likeButton"
-                />
+            </figure>
+            <figure class="places__item">
+              <div class="places__container">
+                <div class="places__pictureContainer">
+                  <img
+                    src="./images/lakeLouise.jpg"
+                    alt="Lake Louise"
+                    class="places__picture"
+                  />
+                </div>
+                <div class="places__nameContainer">
+                  <h2 class="places__name">Lake Louise</h2>
+                  <img
+                    src="./images/likeButton.svg"
+                    alt="Like Button"
+                    class="places__likeButton"
+                  />
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="places__item">
-            <div class="places__container">
-              <div class="places__pictureContainer">
-                <img
-                  src="./images/baldMountains.jpg"
-                  alt="Bald Mountains"
-                  class="places__picture"
-                />
+            </figure>
+            <figure class="places__item">
+              <div class="places__container">
+                <div class="places__pictureContainer">
+                  <img
+                    src="./images/baldMountains.jpg"
+                    alt="Bald Mountains"
+                    class="places__picture"
+                  />
+                </div>
+                <div class="places__nameContainer">
+                  <h2 class="places__name">Bald Mountains</h2>
+                  <img
+                    src="./images/likeButton.svg"
+                    alt="Like Button"
+                    class="places__likeButton"
+                  />
+                </div>
               </div>
-              <div class="places__nameContainer">
-                <h2 class="places__name">Bald Mountains</h2>
-                <img
-                  src="./images/likeButton.svg"
-                  alt="Like Button"
-                  class="places__likeButton"
-                />
+            </figure>
+            <figure class="places__item">
+              <div class="places__container">
+                <div class="places__pictureContainer">
+                  <img
+                    src="./images/latemar.jpg"
+                    alt="Latemar"
+                    class="places__picture"
+                  />
+                </div>
+                <div class="places__nameContainer">
+                  <h2 class="places__name">Latemar</h2>
+                  <img
+                    src="./images/likeButton.svg"
+                    alt="Like Button"
+                    class="places__likeButton"
+                  />
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="places__item">
-            <div class="places__container">
-              <div class="places__pictureContainer">
-                <img
-                  src="./images/latemar.jpg"
-                  alt="Latemar"
-                  class="places__picture"
-                />
+            </figure>
+            <figure class="places__item">
+              <div class="places__container">
+                <div class="places__pictureContainer">
+                  <img
+                    src="./images/vanoirsePark.jpg"
+                    alt="Vanoise National Park"
+                    class="places__picture"
+                  />
+                </div>
+                <div class="places__nameContainer">
+                  <h2 class="places__name">Vanoise National Park</h2>
+                  <img
+                    src="./images/likeButton.svg"
+                    alt="Like Button"
+                    class="places__likeButton"
+                  />
+                </div>
               </div>
-              <div class="places__nameContainer">
-                <h2 class="places__name">Latemar</h2>
-                <img
-                  src="./images/likeButton.svg"
-                  alt="Like Button"
-                  class="places__likeButton"
-                />
+            </figure>
+            <figure class="places__item">
+              <div class="places__container">
+                <div class="places__pictureContainer">
+                  <img
+                    src="./images/lagoDiBraies.jpg"
+                    alt="Lago Di Braies"
+                    class="places__picture"
+                  />
+                </div>
+                <div class="places__nameContainer">
+                  <h2 class="places__name">Lago Di Braies</h2>
+                  <img
+                    src="./images/likeButton.svg"
+                    alt="Like Button"
+                    class="places__likeButton"
+                  />
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="places__item">
-            <div class="places__container">
-              <div class="places__pictureContainer">
-                <img
-                  src="./images/vanoirsePark.jpg"
-                  alt="Vanoise National Park"
-                  class="places__picture"
-                />
-              </div>
-              <div class="places__nameContainer">
-                <h2 class="places__name">Vanoise National Park</h2>
-                <img
-                  src="./images/likeButton.svg"
-                  alt="Like Button"
-                  class="places__likeButton"
-                />
-              </div>
-            </div>
-          </figure>
-          <figure class="places__item">
-            <div class="places__container">
-              <div class="places__pictureContainer">
-                <img
-                  src="./images/lagoDiBraies.jpg"
-                  alt="Lago Di Braies"
-                  class="places__picture"
-                />
-              </div>
-              <div class="places__nameContainer">
-                <h2 class="places__name">Lago Di Braies</h2>
-                <img
-                  src="./images/likeButton.svg"
-                  alt="Like Button"
-                  class="places__likeButton"
-                />
-              </div>
-            </div>
-          </figure>
-        </section>
-      </main>
-      <footer class="footer">
-        <p class="footer__copyright">
-          © 2023. Aarón Hernández - Around The U.S.
-        </p>
-      </footer>
+            </figure>
+          </section>
+        </main>
+        <footer class="footer">
+          <p class="footer__copyright">
+            © 2023. Aarón Hernández - Around The U.S.
+          </p>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
