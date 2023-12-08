@@ -14,6 +14,7 @@
 @import url("../blocks/popup/__aboutMe/popup__aboutMe.css");
 @import url("../blocks/popup/__saveButton/popup__saveButton.css");
 @import url("../blocks/popup/__saveButtonText/popup__saveButtonText.css");
+@import url("../blocks/popup/__closeIcon/popup__CloseIcon.css");
 @import url("../blocks/popup/__overlay/popup__overlay.css");
 /* HEADER ------------------------------------------------------------------------------------ */
 @import url("../blocks/header/header.css");

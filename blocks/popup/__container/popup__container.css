@@ -2,7 +2,6 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -12,5 +11,5 @@
   height: 330px;
   max-width: 430px;
   max-height: 330px;
-  z-index: 10;
+  z-index: 1;
 }
