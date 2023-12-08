@@ -5,3 +5,8 @@
   top: -14%;
   left: 102%;
 }
+
+.popup__closeIcon:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
