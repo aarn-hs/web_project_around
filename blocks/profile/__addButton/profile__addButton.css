@@ -7,3 +7,10 @@
   cursor: pointer;
   opacity: 0.6;
 }
+
+@media screen and (max-width: 979px) {
+  .profile__addButton {
+    width: 282px;
+    height: 50px;
+  }
+}

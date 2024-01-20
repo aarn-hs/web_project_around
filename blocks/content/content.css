@@ -23,3 +23,10 @@
     max-width: 880px;
   }
 }
+
+@media screen and (min-width: 600px) and (max-width: 979px) {
+  .content {
+    width: 88%;
+    max-width: 880px;
+  }
+}
