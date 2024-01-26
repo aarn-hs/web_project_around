@@ -1,0 +1,22 @@
+.profile__addButtonLong {
+  margin: 0;
+  height: fit-content;
+}
+
+.profile__addButtonLong:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 980px) {
+  .profile__addButtonLong {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .profile__addButtonLong {
+    width: 282px;
+    height: 50px;
+  }
+}

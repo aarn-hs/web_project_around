@@ -30,6 +30,7 @@
 @import url("../blocks/profile/__editButton/profile__editButton.css");
 @import url("../blocks/profile/__occupation/profile__ocuppation.css");
 @import url("../blocks/profile/__addButton/profile__addButton.css");
+@import url("../blocks/profile/__addButtonLong/profile__addButtonLong.css");
 /* PLACES ------------------------------------------------------------------------------------ */
 @import url("../blocks/places/places.css");
 @import url("../blocks/places/__item/places__item.css");
