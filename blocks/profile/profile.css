@@ -3,11 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 420px) and (max-width: 979px) {
   .profile {
-    margin: 0 auto 50px;
     flex-direction: column;
   }
 }
