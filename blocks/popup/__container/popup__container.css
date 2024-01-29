@@ -4,13 +4,20 @@
   flex-direction: column;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   background-color: #fff;
   border-radius: 10px;
-  width: 50%;
   height: 330px;
-  max-width: 430px;
-  max-height: 330px;
+  min-width: 430px;
   z-index: 1;
   padding: 34px 36px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 659px) {
+  .popup__container {
+    min-width: 240px;
+    height: 322px;
+    padding: 25px 22px;
+    transform: translate(-50%, -85%);
+  }
 }

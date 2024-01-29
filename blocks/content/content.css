@@ -6,27 +6,23 @@
 @media screen and (max-width: 1920px;) {
   .content {
     width: 69%;
-    max-width: 880px;
   }
 }
 
 @media screen and (min-width: 1048px) and (max-width: 1279px) {
   .content {
     width: 85%;
-    max-width: 880px;
   }
 }
 
 @media screen and (min-width: 980px) and (max-width: 1047px) {
   .content {
     width: 92%;
-    max-width: 880px;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 979px) {
+@media screen and (min-width: 320px) and (max-width: 979px) {
   .content {
     width: 88%;
-    max-width: 880px;
   }
 }
