@@ -13,7 +13,7 @@
 @import url("../blocks/popup/__name/popup__name.css");
 @import url("../blocks/popup/__aboutMe/popup__aboutMe.css");
 @import url("../blocks/popup/__saveButton/popup__saveButton.css");
-@import url("../blocks/popup/__closeIcon/popup__CloseIcon.css");
+@import url("../blocks/popup/__closeIcon/popup__closeIcon.css");
 /* HEADER ------------------------------------------------------------------------------------ */
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__logo/header__logo.css");
