@@ -22,8 +22,6 @@ function handlePopup() {
 
 function handlePopupFormSubmit(evt) {
   evt.preventDefault();
-  let popupName = popup.querySelector(".popup__name");
-  let popupAboutMe = popup.querySelector(".popup__aboutMe");
   profileName.value = popupName.textContent;
   profileOccupation.value = popupAboutMe.textContent;
 }
