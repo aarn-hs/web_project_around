@@ -21,7 +21,7 @@
 @import url("../blocks/placePopup/__input/placePopup__input.css");
 @import url("../blocks/placePopup/__inputText/placePopup__inputText.css");
 @import url("../blocks/placePopup/__name/placePopup__name.css");
-@import url("../blocks/placePopup/__aboutMe/placePopup__link.css");
+@import url("../blocks/placePopup/__link/placePopup__link.css");
 @import url("../blocks/placePopup/__saveButton/placePopup__saveButton.css");
 @import url("../blocks/placePopup/__closeIcon/placePopup__closeIcon.css");
 /* HEADER ------------------------------------------------------------------------------------ */
