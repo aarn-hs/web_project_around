@@ -1,7 +1,7 @@
 .imagePopup {
   margin: 0;
-  display: flex;
   position: relative;
+  display: none;
 }
 
 .imagePopup_opened {
