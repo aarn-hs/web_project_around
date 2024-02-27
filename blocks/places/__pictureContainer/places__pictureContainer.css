@@ -1,4 +1,5 @@
 .places__pictureContainer {
+  position: relative;
   margin: 0;
   height: 282px;
   width: 282px;
