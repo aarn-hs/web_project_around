@@ -1,0 +1,7 @@
+.imagePopup {
+  display: flex;
+}
+
+.imagePopup_opened {
+  display: flex;
+}
