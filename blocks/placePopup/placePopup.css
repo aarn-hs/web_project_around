@@ -1,0 +1,9 @@
+.placePopup {
+  margin: 0;
+  position: relative;
+  display: none;
+}
+
+.placePopup_opened {
+  display: flex;
+}
