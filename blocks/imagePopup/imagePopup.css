@@ -1,5 +1,7 @@
 .imagePopup {
+  margin: 0;
   display: flex;
+  position: relative;
 }
 
 .imagePopup_opened {

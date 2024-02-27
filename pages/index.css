@@ -27,6 +27,7 @@
 /* IMAGE POPUP ------------------------------------------------------------------------------------- */
 @import url("../blocks/imagePopup/imagePopup.css");
 @import url("../blocks/imagePopup/__container/imagePopup__container.css");
+@import url("../blocks/imagePopup/__pictureContainer/imagePopup__pictureContainer.css");
 @import url("../blocks/imagePopup/__closeIcon/imagePopup__closeIcon.css");
 @import url("../blocks/imagePopup/__picture/imagePopup__picture.css");
 @import url("../blocks/imagePopup/__placeName/imagePopup__placeName.css");
