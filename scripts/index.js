@@ -15,6 +15,11 @@ const profileOccupation = profileContainer.querySelector(
   ".profile__occupation"
 );
 
+//Image popup consts
+const imagePopup = document.querySelector(".imagePopup");
+const imagePopupPic = imagePopup.querySelector(".imagePopup__picture");
+const imagePopupName = imagePopup.querySelector(".imagePopup__placeName");
+
 //Card conts
 const card = document.querySelector(".places__item");
 const likeButton = card.querySelector(".places__likeButton");
