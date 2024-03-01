@@ -13,6 +13,9 @@ const profileOccupation = profileContainer.querySelector(
   ".profile__occupation"
 );
 
+const card = document.querySelector(".places__item");
+const likeButton = card.querySelector(".places__likeButton");
+
 function handlePopup() {
   popup.classList.toggle("popup_opened");
   overlay.classList.toggle("overlay_deployed");
@@ -31,3 +34,7 @@ function handlePopupFormSubmit(evt) {
 editButton.addEventListener("click", handlePopup);
 closeButton.addEventListener("click", handlePopup);
 popupForm.addEventListener("submit", handlePopupFormSubmit);
+likeButton.addEventListener("click", function (evt) {
+  const eventTarget = evt.target;
+  eventTarget.classList.toggle("places__likeButton_active");
+});

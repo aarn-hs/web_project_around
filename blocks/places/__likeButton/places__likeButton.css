@@ -10,4 +10,5 @@
 }
 
 .places__likeButton_active {
+  background: url("../../../images/likeButtonBlack.svg");
 }
