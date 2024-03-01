@@ -8,3 +8,6 @@
   cursor: pointer;
   opacity: 0.5;
 }
+
+.places__likeButton_active {
+}

@@ -22,8 +22,10 @@ function handlePopup() {
 
 function handlePopupFormSubmit(evt) {
   evt.preventDefault();
-  profileName.value = popupName.textContent;
-  profileOccupation.value = popupAboutMe.textContent;
+  profileName.textContent = popupName.value;
+  profileOccupation.textContent = popupAboutMe.value;
+  popup.classList.toggle("popup_opened");
+  overlay.classList.toggle("overlay_deployed");
 }
 
 editButton.addEventListener("click", handlePopup);
