@@ -1,5 +1,32 @@
 const overlay = document.querySelector(".overlay");
 
+const initialCards = [
+  {
+    name: "Valle de Yosemite",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/yosemite.jpg",
+  },
+  {
+    name: "Lago Louise",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/lake-louise.jpg",
+  },
+  {
+    name: "Montañas Calvas",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/bald-mountains.jpg",
+  },
+  {
+    name: "Latemar",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/latemar.jpg",
+  },
+  {
+    name: "Parque Nacional de la Vanoise",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/vanoise.jpg",
+  },
+  {
+    name: "Lago di Braies",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/lago.jpg",
+  },
+];
+
 //Popup consts
 const popup = document.querySelector(".popup");
 const popupForm = popup.querySelector(".popup__container");
@@ -23,18 +50,16 @@ const addPlaceForm = addPlacePopup.querySelector(".placePopup__container");
 const addPlaceCloseButton = addPlacePopup.querySelector(
   ".placePopup__closeIcon"
 );
-const addPlaceTitle = addPlacePopup.querySelector(".placePopup__name");
-const addPlacePic = addPlacePopup.querySelector(".placePopup__link");
+const addPlaceCreateButton = addPlacePopup.querySelector(
+  ".placePopup__saveButton"
+);
 
 //Image popup consts
 const imagePopup = document.querySelector(".imagePopup");
 const imagePopupPic = imagePopup.querySelector(".imagePopup__picture");
 const imagePopupName = imagePopup.querySelector(".imagePopup__placeName");
 
-//Card conts
-const card = document.querySelector(".places__item");
-const likeButton = card.querySelector(".places__likeButton");
-const trashButton = card.querySelector(".places__trash");
+const placesSection = document.querySelector(".places");
 
 //Popup functions
 function handlePopup() {
@@ -64,6 +89,32 @@ function handleAddPlacePopupFormSubmit() {
   overlay.classList.remove("overlay_deployed");
 }
 
+function addPlace(placePic, placeName) {
+  const cardTemplate = document.querySelector(".places__item").content;
+  const cardElement = cardTemplate
+    .querySelector(".places__container")
+    .cloneNode(true);
+  const likeButton = cardElement.querySelector(".places__likeButton");
+  const trashButton = cardElement.querySelector(".places__trash");
+
+  cardElement.querySelector(".places__picture").src = placePic;
+  cardElement.querySelector(".places__picture").alt = placeName;
+  cardElement.querySelector(".places__name").textContent = placeName;
+
+  likeButton.addEventListener("click", function (evt) {
+    const eventTarget = evt.target;
+    eventTarget.classList.toggle("places__likeButton_active");
+  });
+
+  trashButton.addEventListener("click", function (evt) {
+    const eventTarget = evt.target;
+    const gonerCard = eventTarget.closest(".places__item");
+    gonerCard.remove();
+  });
+
+  placesSection.prepend(cardElement);
+}
+
 //Popup listeners
 editButton.addEventListener("click", handlePopup);
 closeButton.addEventListener("click", handlePopup);
@@ -74,13 +125,16 @@ addButton.addEventListener("click", handleAddPlacePopup);
 addButtonLong.addEventListener("click", handleAddPlacePopup);
 addPlaceCloseButton.addEventListener("click", handleAddPlacePopup);
 addPlaceForm.addEventListener("submit", handleAddPlacePopupFormSubmit);
+addPlaceCreateButton.addEventListener("click", function () {
+  const addPlacePic = addPlacePopup.querySelector(".placePopup__link");
+  const addPlaceTitle = addPlacePopup.querySelector(".placePopup__name");
 
-//Card listeners
-likeButton.addEventListener("click", function (evt) {
-  const eventTarget = evt.target;
-  eventTarget.classList.toggle("places__likeButton_active");
+  addPlace(addPlacePic.value, addPlaceTitle.value);
+
+  addPlaceTitle.value = "";
+  addPlacePic.value = "";
 });
-trashButton.addEventListener("click", function () {
-  const gonerCard = trashButton.closest(".places__item");
-  gonerCard.remove();
+
+initialCards.forEach((card) => {
+  addPlace(card.link, card.name);
 });
