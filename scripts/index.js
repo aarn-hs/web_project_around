@@ -124,7 +124,7 @@ addButton.addEventListener("click", handleAddPlacePopup);
 addButtonLong.addEventListener("click", handleAddPlacePopup);
 addPlaceCloseButton.addEventListener("click", handleAddPlacePopup);
 addPlaceForm.addEventListener("submit", handleAddPlacePopupFormSubmit);
-addPlaceCreateButton.addEventListener("click", function () {
+addPlaceForm.addEventListener("submit", function () {
   const addPlacePic = addPlacePopup.querySelector(".placePopup__link");
   const addPlaceTitle = addPlacePopup.querySelector(".placePopup__name");
 
