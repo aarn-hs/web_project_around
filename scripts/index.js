@@ -108,8 +108,7 @@ function addPlace(placePic, placeName) {
 
   trashButton.addEventListener("click", function (evt) {
     const eventTarget = evt.target;
-    const gonerCard = eventTarget.closest(".places__item");
-    gonerCard.remove();
+    eventTarget.closest(".places__item").remove();
   });
 
   placesSection.prepend(cardElement);
