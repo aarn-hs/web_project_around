@@ -84,7 +84,6 @@ function handleAddPlacePopup() {
 }
 
 function handleAddPlacePopupFormSubmit() {
-  evt.preventDefault();
   addPlacePopup.classList.remove("placePopup_opened");
   overlay.classList.remove("overlay_deployed");
 }
@@ -101,14 +100,12 @@ function addPlace(placePic, placeName) {
   cardElement.querySelector(".places__picture").alt = placeName;
   cardElement.querySelector(".places__name").textContent = placeName;
 
-  likeButton.addEventListener("click", function (evt) {
-    const eventTarget = evt.target;
-    eventTarget.classList.toggle("places__likeButton_active");
+  likeButton.addEventListener("click", function () {
+    likeButton.classList.toggle("places__likeButton_active");
   });
 
-  trashButton.addEventListener("click", function (evt) {
-    const eventTarget = evt.target;
-    eventTarget.closest(".places__item").remove();
+  trashButton.addEventListener("click", function () {
+    cardElement.remove();
   });
 
   placesSection.prepend(cardElement);
@@ -123,8 +120,8 @@ popupForm.addEventListener("submit", handlePopupFormSubmit);
 addButton.addEventListener("click", handleAddPlacePopup);
 addButtonLong.addEventListener("click", handleAddPlacePopup);
 addPlaceCloseButton.addEventListener("click", handleAddPlacePopup);
-addPlaceForm.addEventListener("submit", handleAddPlacePopupFormSubmit);
-addPlaceForm.addEventListener("submit", function () {
+addPlaceForm.addEventListener("submit", function (evt) {
+  evt.preventDefault();
   const addPlacePic = addPlacePopup.querySelector(".placePopup__link");
   const addPlaceTitle = addPlacePopup.querySelector(".placePopup__name");
 
@@ -132,6 +129,7 @@ addPlaceForm.addEventListener("submit", function () {
 
   addPlaceTitle.value = "";
   addPlacePic.value = "";
+  handleAddPlacePopupFormSubmit();
 });
 
 initialCards.forEach((card) => {

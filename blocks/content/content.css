@@ -7,9 +7,10 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1920px;) {
+@media screen and (min-width: 1280px) and (max-width: 1920px;) {
   .content {
-    width: 69%;
+    max-width: 1000px;
+    width: 85%;
   }
 }
 
