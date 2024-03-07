@@ -96,6 +96,8 @@ function addPlace(placePic, placeName) {
   const likeButton = cardElement.querySelector(".places__likeButton");
   const trashButton = cardElement.querySelector(".places__trash");
 
+  const picture = cardElement.querySelector(".places__picture");
+
   cardElement.querySelector(".places__picture").src = placePic;
   cardElement.querySelector(".places__picture").alt = placeName;
   cardElement.querySelector(".places__name").textContent = placeName;
@@ -106,6 +108,10 @@ function addPlace(placePic, placeName) {
 
   trashButton.addEventListener("click", function () {
     cardElement.remove();
+  });
+
+  picture.addEventListener("click", function () {
+    overlay.classList.add("overlay_deployed");
   });
 
   placesSection.prepend(cardElement);
