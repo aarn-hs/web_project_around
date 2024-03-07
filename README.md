@@ -1,23 +1,23 @@
-# Proyecto 5: TripleTen Web Project Around
+# Proyecto 6: TripleTen Web Project Around
 
 ## Descripción
 
-Este es el proyecto 5 del curso de Desarrollador Web de TripleTen. Está diseñado para practicar habilidades básicas de JavaScript, así como actividades relacionadas con el posicionamiento, diseño web adaptable y creación de formularios.
+Este es el sexto proyecto del curso de Desarrollador Web de TripleTen. Se enfoca en el uso de JavaScript para crear formularios interactivos que agregan nueva información gráfica mediante el uso de templates. Además, se practican habilidades relacionadas con el posicionamiento, diseño web adaptable y creación de elementos interactivos.
 
 ### Tecnologías Utilizadas
 
-- JavaScript: Definición de objetos mediante el manejo del DOM con el método querySelector y creación de funciones con eventListeners.
-- HTML y CSS: Uso de Flexbox para la estructura general, Grid para la sección de lugares y media queries para el diseño adaptable.
+- JavaScript: Definición de objetos manipulando el DOM con querySelector, creación de funciones con eventListeners y utilización de templates para agregar nueva información a la página.
+- HTML y CSS: Utilización de Flexbox para la estructura general, Grid para la sección de lugares y media queries para lograr un diseño adaptable y responsive.
 
 ### Características Principales
 
-- Interactividad: Utilización de JavaScript para crear funciones interactivas con elementos de la página.
-- Diseño Responsivo: Implementación de Flexbox y Grid, así como media queries para garantizar un diseño adaptativo.
-- Formulario: Creación de un formulario desplegable para ingresar un nuevo nombre para el perfil de la página.
+- Interactividad: Implementación de funciones interactivas en la página mediante JavaScript.
+- Diseño Responsivo: Uso de Flexbox, Grid y media queries para garantizar un diseño adaptable en diferentes dispositivos.
+- Formulario: Creación de formularios desplegables para ingresar nueva información gráfica de manera sencilla.
 
 ## Estatus
 
-Este trabajo aún se encuentra bajo revisión y se realizarán actualizaciones para correcciones.
+Este proyecto se encuentra actualmente en revisión y se realizarán actualizaciones para correcciones y mejoras adicionales.
 
 ## Créditos
 
@@ -26,4 +26,4 @@ Este trabajo aún se encuentra bajo revisión y se realizarán actualizaciones p
 
 ## Acceso
 
-Enlace al proyecto: [TripleTen Web Project Around](https://aarn-hs.github.io/web_project_around/)
+Se puede acceder al proyecto TripleTen Web Project Around a través del siguiente enlace: [TripleTen Web Project Around](https://aarn-hs.github.io/web_project_around/) 
