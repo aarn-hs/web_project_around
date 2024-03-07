@@ -54,11 +54,6 @@ const addPlaceCreateButton = addPlacePopup.querySelector(
   ".placePopup__saveButton"
 );
 
-//Image popup consts
-const imagePopup = document.querySelector(".imagePopup");
-const imagePopupPic = imagePopup.querySelector(".imagePopup__picture");
-const imagePopupName = imagePopup.querySelector(".imagePopup__placeName");
-
 const placesSection = document.querySelector(".places");
 
 //Popup functions
@@ -95,12 +90,19 @@ function addPlace(placePic, placeName) {
     .cloneNode(true);
   const likeButton = cardElement.querySelector(".places__likeButton");
   const trashButton = cardElement.querySelector(".places__trash");
-
   const picture = cardElement.querySelector(".places__picture");
+
+  const imagePopup = cardElement.querySelector(".imagePopup");
+  const imagePopupCloseIcon = imagePopup.querySelector(
+    ".imagePopup__closeIcon"
+  );
 
   cardElement.querySelector(".places__picture").src = placePic;
   cardElement.querySelector(".places__picture").alt = placeName;
   cardElement.querySelector(".places__name").textContent = placeName;
+
+  imagePopup.querySelector(".imagePopup__picture").src = placePic;
+  imagePopup.querySelector(".imagePopup__placeName").textContent = placeName;
 
   likeButton.addEventListener("click", function () {
     likeButton.classList.toggle("places__likeButton_active");
@@ -111,7 +113,13 @@ function addPlace(placePic, placeName) {
   });
 
   picture.addEventListener("click", function () {
-    overlay.classList.add("overlay_deployed");
+    imagePopup.classList.add("imagePopup_opened");
+    overlay.classList.toggle("overlay_deployed");
+  });
+
+  imagePopupCloseIcon.addEventListener("click", function () {
+    imagePopup.classList.remove("imagePopup_opened");
+    overlay.classList.toggle("overlay_deployed");
   });
 
   placesSection.prepend(cardElement);
