@@ -1,7 +1,6 @@
 .profile__editButton {
   display: flex;
   margin-left: 18px;
-  height: fit-content;
   translate: 0 15px;
   width: 24px;
   height: 24px;
