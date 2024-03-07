@@ -119,7 +119,7 @@ function addPlace(placePic, placeName) {
 
   imagePopupCloseIcon.addEventListener("click", function () {
     imagePopup.classList.remove("imagePopup_opened");
-    overlay.classList.toggle("overlay_deployed");
+    overlay.classList.remove("overlay_deployed");
   });
 
   placesSection.prepend(cardElement);
